@@ -3,6 +3,8 @@ Projekt na PSI, 3 semestr zaoczne magisterskie WEEIA PŁ
 
 Baza danych MySql
 tabele:
+
+
 CREATE TABLE `passwords` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
