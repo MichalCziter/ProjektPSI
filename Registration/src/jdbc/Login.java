@@ -62,7 +62,7 @@ public class Login extends HttpServlet {
 			if (name.equals(dbName) && password.equals(dbPassword)) {
 				// zalogowanie i wyslanie informacji o dacie logowania
 				Date date = Calendar.getInstance().getTime();
-				DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");
+				DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 				String strDate = dateFormat.format(date);
 
 				sql = "update registration set last_login = ? where name=?";

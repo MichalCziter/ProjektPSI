@@ -56,7 +56,7 @@ public class Logout extends HttpServlet {
 			java.sql.PreparedStatement ps = conn.prepareStatement(sql);
 			
 			Date date = Calendar.getInstance().getTime();  
-			DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");  
+			DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");  
 			String lastLogout = dateFormat.format(date); 
 			
 			ps.setString(1,  lastLogout);
